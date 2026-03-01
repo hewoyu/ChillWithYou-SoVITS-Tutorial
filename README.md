@@ -33,7 +33,7 @@
 | 游戏解包教程 | [B站BV1NVwYecESx](https://www.bilibili.com/video/BV1NVwYecESx/?spm_id_from=333.1391.0.0) | Unity游戏资源解包、语音素材提取操作标准 |
 | 解包工具官方地址 | [C++重构版AssetStudio](https://www.icloud.com.cn/iclouddrive/0cbLOMljXohDHb1L1D1QIZPcQ#Release) | 游戏资源解包专用工具，适配Unity 2022版本 |
 | 解包工具优化说明 | [B站BV1CNZdBzEfR](https://www.bilibili.com/video/BV1CNZdBzEfR/?spm_id_from=333.1391.0.0) | 重构版AssetStudio工具使用说明 |
-| 游戏AI Mod参考 | [B站BV1x3mnBpE9E](https://www.bilibili.com/video/BV1x3mnBpE9E/?spm_id_from=333.337.search-card.all.click) | 《Chill With You》AI全语音对话Mod参考 |
+| 游戏AI Mod参考 | [B站BV1x3mnBpE9E](https://www.bilibili.com/video/BV1x3mnBpE9E/?spm_id_from=333.337.search-card.all.click)[github地址](https://github.com/qzrs777/AIChat) | 《Chill With You》AI全语音对话Mod参考 |
 | GPT-SoVITS官方教程 | 项目原作者花儿不哭B站官方账号 | v2pro版本权威功能与参数说明 |
 
 ---
