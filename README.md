@@ -4,7 +4,7 @@
 # Chill With You 游戏AI语音定制训练全流程教程
 本项目为《Chill With You》游戏AI全语音对话Mod（官方仓库：https://github.com/qzrs777/AIChat/tree/main ）的配套定制训练教程，针对原Mod默认直接调用游戏原生语音、自由对话场景下音色还原度不足、语气生硬的问题，提供基于 **GPT-SoVITS-v2pro-20250604** 的角色语音克隆全流程操作指南，本教程全程操作参考B站UP主对应教程，仅用于个人学习研究。
 
-> 注：本次教程中引用的https://www.yuque.com/baicaigongchang1145haoyuangong/ib3g1e?# 《GPT-SoVITS指南》文档，暂未获取到网页解析内容，以下教程中已按你指定的文档链接完成更新，如需查看详细教程内容，可直接访问该文档链接。
+> 注：本次教程中引用了[《GPT-SoVITS指南》](https://www.yuque.com/baicaigongchang1145haoyuangong/ib3g1e?# 《GPT-SoVITS指南》)文档
 
 ---
 
