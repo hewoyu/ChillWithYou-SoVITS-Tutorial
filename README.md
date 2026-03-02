@@ -123,12 +123,6 @@ custom:
   vits_weights_path: SoVITS_weights_v2Pro/congyin_e8_s2344.pth  # 使用你训练的 SoVITS 模型
   version: v2Pro  # 根据你的模型版本设置
 ```
-### 8. 合成音频对比对比
-暂时没有整理出来
-
-
-
-
 
 ### 日志核心说明
 1.  **依赖库加载**：程序会自动加载CUDA/cudnn相关的GPU加速依赖库，为语音识别提供硬件加速支持。
@@ -138,7 +132,7 @@ custom:
 
 
 ## 8. 合成音频对比对比
-
+暂时没有整理出来
 
 ---
 ## 常见问题与避坑指南
