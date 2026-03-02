@@ -104,17 +104,26 @@ ASR语言设置：js(日语)
 2.  选择训练集内3-10秒的参考音频，填写对应参考文本，选择中文语种。
 3.  输入游戏实时对话场景的测试文本，点击「合成语音」，对比训练后语音与游戏原生语音的音色还原度、自然度，验证训练效果。
 
-### 7. API对接与游戏Mod落地
-#### 7.1 Mod本体下载与安装
-Mod官方下载地址：https://github.com/qzrs777/AIChat/tree/main
-1.  进入Mod官方仓库，从`Releases`页面下载最新版`AIChatMod.zip`并解压；也可使用GitHub Actions在线构建的最新预览版。
-2.  安装BepInEx前置：在Steam右键《Chill With You》-> 管理 -> 浏览本地文件，将压缩包内`BepInEx_*`文件夹下的内容复制到游戏根目录，运行一次游戏生成插件目录结构。
-3.  确认游戏目录下已生成`BepInEx/plugins`文件夹，将压缩包内的`AIChat.dll`放入该文件夹，完成Mod安装。
+### 7. API使用自定义训练模型的方法
+本项目是使用v2Pro版本训练在
+将训练模型放在GPT-SoVITS-v2pro-20250604\GPT_weights_v2Pro，GPT-SoVITS-v2pro-20250604\SoVITS_weights_v2Pro
+GPT_weights_v2Pro存放格式为ckpt模型
+SoVITS_weights_v2Pro存放格式为pth模型
 
-#### 7.2 训练模型与Mod对接配置
-1.  按照B站核心训练教程的步骤，启动GPT-SoVITS-v2pro的WebAPI v2服务，默认运行地址为`http://127.0.0.1:9880`。
-2.  打开游戏，按F9/F10键调出Mod界面，在TTS配置项中，填写TTS服务URL为上述API地址，替换默认参考音频为你训练使用的角色参考音频，填写对应参考文本与语种。
-3.  在LLM配置中填写兼容的API地址、Key与模型名称，保存配置后，即可在游戏内测试对话，验证AI角色使用训练后专属语音完成实时问答的效果，完成全流程闭环。
+修改配置文件
+打开配置文件：d:\AIgju\GPT-SoVITS-v2pro-20250604\GPT_SoVITS\configs\tts_infer.yaml
+修改 custom 部分，将模型路径指向你的训练模型：
+```
+custom:
+  bert_base_path: GPT_SoVITS/pretrained_models/chinese-roberta-wwm-ext-large
+  cnhuhbert_base_path: GPT_SoVITS/pretrained_models/chinese-hubert-base
+  device: cuda
+  is_half: true
+  t2s_weights_path: GPT_weights_v2Pro/congyin-e15.ckpt  # 使用你训练的 GPT 模型,这里复制文件地址
+  vits_weights_path: SoVITS_weights_v2Pro/congyin_e8_s2344.pth  # 使用你训练的 SoVITS 模型
+  version: v2Pro  # 根据你的模型版本设置
+```
+
 
 ### 日志核心说明
 1.  **依赖库加载**：程序会自动加载CUDA/cudnn相关的GPU加速依赖库，为语音识别提供硬件加速支持。
