@@ -1,0 +1,25 @@
+# Model files
+GPT_weights_v2Pro/*.ckpt
+SoVITS_weights_v2Pro/*.pth
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
