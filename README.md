@@ -123,6 +123,11 @@ custom:
   vits_weights_path: SoVITS_weights_v2Pro/congyin_e8_s2344.pth  # 使用你训练的 SoVITS 模型
   version: v2Pro  # 根据你的模型版本设置
 ```
+### 8. 合成音频对比对比
+
+
+
+
 
 
 ### 日志核心说明
